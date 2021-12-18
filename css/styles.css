@@ -318,7 +318,45 @@ li {
     height: auto;
 }
 
+/*Секція наші клієнти*/
+.client{
+    outline: 1px solid red;
+}
+.client-title{
+     font-weight: bold;
+    font-size: 36px;
+    line-height: 1.1;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    margin-bottom: 50px;
+}
+.client-list{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.client-item{
+    background-color:var(--background-color);
+     outline: 1px solid green;
 
+}
+.client-item:not(:first-child) {
+    margin-left: 30px;
+}
+.client-item>a {
+   
+}
+.client-item img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+     background-image: url("../images/Union.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 16px 32px;
+}
 .footer{
     padding-top: 60px;
     padding-bottom: 60px;
