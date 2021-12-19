@@ -195,16 +195,43 @@ li {
     border-radius: 4px;
     border: none;
 }
+
+/*Секкція Особливості Advantage*/
+
 .advantage{
    padding-bottom: 0;
 }
 .advantage-list{
     display: flex;
-
 }
 .advantage-item{
     width: 270px;
 }
+.advantage-item:not(:first-child) {
+      margin-left: 30px;
+}
+.advantage-item::before{
+    display: block;
+    content: "";
+    height: 120px;
+    background: var(--background-button-portfolio);
+    border-radius: 4px;
+    /*background-image: url("../images/antenna1.png");*/
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+    margin-bottom: 30px;
+}
+ .advantage-item:nth-child(1)::before{
+     background-image: url("../images/antenna1.png");
+ }
+
+ .advantage-item:nth-child(2)::before{
+     background-image: url("../images/clock1.png");
+ }
+  .advantage-item:nth-child(3)::before{
+     background-image: url("../images/diagram1.png");
+ }
 .advantage h2{
      position: absolute;
      width: 1px;
@@ -222,9 +249,7 @@ li {
     color: var(--primary-text-color);
     margin-bottom: 10px;
 }
-.advantage-item:not(:first-child) {
-      margin-left: 30px;
-}
+
 .advantage-list p{
     line-height: 1.7;
     letter-spacing: 0.03em;
