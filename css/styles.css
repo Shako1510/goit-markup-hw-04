@@ -20,10 +20,11 @@ body {
     --background-button-hover: #2196F3;
     --box-shadow-portfolio:0px 4px 4px 0px #00000040;
     --box-shadow-button-hover:box-shadow: 0px 2px 2px 0px #0000001F;
-box-shadow: 0px 1px 2px 0px #00000014;
-box-shadow: 0px 3px 1px 0px #0000001A;
---portfolio-border-radius: 4px;
-;
+    box-shadow: 0px 1px 2px 0px #00000014;
+    box-shadow: 0px 3px 1px 0px #0000001A;
+    --portfolio-border-radius: 4px;
+    --primery-icon-color: #AFB1B8;
+
 }
 a{
     text-decoration: none;
@@ -316,13 +317,13 @@ li {
     margin-bottom: 50px;
 }
 .team-list{
-    display: inline-flex;
+    display: flex;
     /*justify-content: space-between;*/
     margin-left: auto;
     margin-right: auto;
 }
 .team-details {
-    padding: 30px 0;
+  
 }
 .team-item{
     width: calc((100% - 90px) / 4);
@@ -351,13 +352,45 @@ li {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--page-text-color);
+    margin-bottom: 16px;
 
 }
 .team-picture{
     max-width: 100%;
     height: auto;
+    margin-bottom: 30px;
+}
+.social-list{
+    display: flex;
+    width: 206px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+.social-list li:not(:last-child){
+    margin-right: 10px;
+}
+.social-link{
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color);
+}
+.social-link:hover{
+   background-color: var(--background-button-hover);
+}
+
+.social-icon{
+    fill:var(--primery-icon-color);
+}
+
+.social-icon:hover{
+    fill:var(--title-text-color);
+}
 /*Секція наші клієнти*/
 .client{
     outline: 1px solid red;
