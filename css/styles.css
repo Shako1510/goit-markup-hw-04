@@ -222,28 +222,31 @@ li {
 .advantage-item:not(:first-child) {
       margin-left: 30px;
 }
-.advantage-item::before{
-    display: block;
-    content: "";
+.advantage-blok {
+    display: flex;
     height: 120px;
     background: var(--background-button-portfolio);
     border-radius: 4px;
-    /*background-image: url("../images/antenna1.png");*/
-    background-repeat: no-repeat;
-    background-position: 50%;
-    background-size: contain;
+   /*background-image: url("../images/symbol-defs.svg#icon-antenna1");*/
     margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
 }
- .advantage-item:nth-child(1)::before{
-     background-image: url("../images/antenna1.png");
- }
+
+/*Інший варіант для не інтерактивних елементів додавати фото через бекграунд імедж*/
+ /*.advantage-item:nth-child(1) {
+   background-image: url("../images/symbol-defs.svg#icon-antenna1");
+  
 
  .advantage-item:nth-child(2)::before{
-     background-image: url("../images/clock1.png");
+     background-image: url("../images/symbol-defs.svg#icon-clock1");
+    
  }
   .advantage-item:nth-child(3)::before{
      background-image: url("../images/diagram1.png");
- }
+ }*/
+
+
 .advantage h2{
      position: absolute;
      width: 1px;
