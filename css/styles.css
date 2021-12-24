@@ -19,7 +19,10 @@ body {
     --background-button-portfolio: #F5F4FA;
     --background-button-hover: #2196F3;
     --box-shadow-portfolio:0px 4px 4px 0px #00000040;
-    --box-shadow-button-hover:box-shadow: 0px 2px 2px 0px #0000001F;
+    --box-shadow-portlolio-button : 0px 2px 2px 0px rgba(0, 0, 0, 0,12);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0,08);
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0,1);
+    --box-shadow-button-hover: 0px 2px 2px 0px #0000001F;
     box-shadow: 0px 1px 2px 0px #00000014;
     box-shadow: 0px 3px 1px 0px #0000001A;
     --portfolio-border-radius: 4px;
@@ -333,6 +336,8 @@ li {
     width: calc((100% - 90px) / 4);
     border-radius: 0px 0px 4px 4px;
     background-color:var(--background-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+
 
 }
 .team-item:not(:first-child) {
@@ -573,6 +578,9 @@ display: block;
     margin-left: 8px;
 }
 
+.button-item:hover {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 .button-list button {
     font-weight: 500;
     font-size: 16px;
@@ -588,7 +596,7 @@ display: block;
 .button-list button:hover {
     background: var(--background-button-hover);
     color: var(--title-text-color);
-    box-shadow: var(--box-shadow-button-hover);
+    box-shadow: var(--box-shadow-portlolio-button);
     cursor: pointer;
     border-radius: var(--portfolio-border-radius);
     border: none;
@@ -597,7 +605,7 @@ display: block;
 .button-list button:focus {
     background: var(--background-button-hover);
     color: var(--title-text-color);
-    box-shadow: var(--box-shadow-button-hover);
+    box-shadow: var(--box-shadow-portlolio-button);
     border-radius: var(--portfolio-border-radius);
    
  
@@ -665,4 +673,9 @@ line-height: 1.8;
 letter-spacing: 0.03em;
 color: var(--page-text-color);
 margin-left: 24px;
+}
+
+.card:hover
+{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
