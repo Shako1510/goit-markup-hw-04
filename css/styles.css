@@ -432,24 +432,29 @@ li {
 .client-link {
     display: flex;
     width: 170px;
+    height: 92px;
     padding: 16px 32px;
      border: 1px solid var(--primery-icon-color);
      background-color: var(--background-color);
     box-sizing: border-box;
     border-radius: 4px;
 }
-.client-link:hover{
+.client-link:hover {
      border: 1px solid var(--background-button-hover);
-     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
+
+.client-link:hover .client-icon{
+   fill: var(--background-button-hover);
+
 }
 .client-icon {
     fill: var(--primery-icon-color);
-    width: 106px;
-    height: 60px;
+  
 }
-.client-icon:hover{
+/*.client-icon:hover{
     fill: var(--background-button-hover);
-}
+}*/
 
 /*Кінець секції Постійні клієнти*/
 
